@@ -1,0 +1,174 @@
+#include "ioavr.h"
+#include "ATSHA_Programmer_PL1.h"
+#include "ATSHA_Programmer_PL2.h"
+#include "I2C_Protocol.h"
+#include "I2C_ACK_NACK_Generation.h"
+
+static          unsigned char           current_operation = WAKE_ATSHA;         // Denotes the current operation being performed within this operational cycle.
+static          unsigned char           transception_counter = 0;               // A counter which denotes how many bytes have been sent/ received through I2C.
+static          unsigned char           ATSHA_timer = 0;                        // ATSHA timer.
+static          unsigned int            previous_system_time = 0;               // Previous system time.
+
+PL2_flags ATSHA_Operational_Cycle(command_response_struct *command_response, unsigned int current_system_time)
+{
+     //// Initialization
+     unsigned char             reset_command = RESET_ATSHA_BUFFER; 
+     I2C_status_struct         I2C_status;                                   // Denotes the output flag of I2C protocol.
+     PL2_flags                 PL2_output_flag = PL2_BUSY;             // The output flag of PL2, which takes the values PL2_BUSY, PL2_FINISHED, PL2_FAILURE.
+     
+     // Setting the ATSHA timer based on the system time.
+     if (current_system_time != previous_system_time)
+     {
+       ATSHA_timer++;
+       previous_system_time = current_system_time;
+     }
+
+     
+     //// Main Commands
+     switch (current_operation)   
+     {     
+       case (WAKE_ATSHA):
+         transception_counter = 0;
+         I2C_status = I2C_Protocol(&reset_command, 1, I2C_MT_MODE, WAKE_TOKEN_COMMAND, IGNORE_CRC, WAKE_TOKEN_I2C_BITRATE, WAKE_TOKEN_I2C_FREQUENCY_PRESCALAR, current_system_time);
+         if (I2C_status.current_state == I2C_MT_ADDRESS_NACK)
+         {
+           current_operation = CHECK_ATSHA_AWAKE;
+         }
+         else
+         {
+           current_operation = WAKE_ATSHA;           
+         }
+         break;
+ 
+       case (CHECK_ATSHA_AWAKE):
+         I2C_status = I2C_Protocol(&((*command_response).response[transception_counter]), 1, I2C_MR_MODE, ATSHA_SLAVE_ADDRESS, IGNORE_CRC, 0x00, 0x00, current_system_time);
+         if (I2C_status.current_state == I2C_MR_ADDRESS_NACK && current_system_time != previous_system_time)
+         {
+           current_operation = WAKE_ATSHA;                      
+         }
+         else
+         {
+           Read_Buffer_Assign_Status(I2C_status.output_flag, command_response, CHECK_ATSHA_AWAKE, WAKE_ATSHA, WAKE_ATSHA);           
+         }
+         break;
+ 
+       case (SEND_COMMAND):
+         I2C_status = I2C_Protocol(&((*command_response).command[transception_counter]), 1, I2C_MT_MODE, ATSHA_SLAVE_ADDRESS, IGNORE_CRC, 0x00, 0x00, current_system_time);
+         Write_Buffer_Assign_Status(I2C_status.output_flag, (*command_response).command[1], SEND_COMMAND, READ_RESPONSE);
+         break; 
+         
+       case (READ_RESPONSE):
+         I2C_status = I2C_Protocol(&((*command_response).response[0]), 1, I2C_MR_MODE, ATSHA_SLAVE_ADDRESS, IGNORE_CRC, 0x00, 0x00, current_system_time);
+         Read_Buffer_Assign_Status(I2C_status.output_flag, command_response, READ_RESPONSE, (*command_response).sleep_idle, SEND_COMMAND);
+         if (transception_counter == 1) // After the reception of first byte is complete, save it as the response length.
+         {
+           (*command_response).response_length = (*command_response).response[0];
+         }
+         break;       
+         
+       case (SET_ATSHA_SLEEP):
+         (*command_response).command[0] = ATSHA_SLEEP_WORD_ADDRESS; // Given that the current cycle is finished, sleep command is set in command array.
+         I2C_status = I2C_Protocol(&((*command_response).command[0]), 1, I2C_MT_MODE, ATSHA_SLAVE_ADDRESS, IGNORE_CRC, 0x00, 0x00, current_system_time);
+         PL2_output_flag = PL2_FINISHED;      // The protocol is terminated at this point.
+         current_operation = WAKE_ATSHA;        // When this busy cycle is finished, the status is reset to WAKE ATSHA. 
+                                                // Hence, the next cycle will begin from the top.
+         ATSHA_timer = 0;                       // Given that this is the final state of operation for this cycle, timer is set to zero.
+         break;           
+         
+       case (SET_ATSHA_IDLE):
+         (*command_response).command[0] = ATSHA_IDLE_WORD_ADDRESS;  // If not to sleep, then ATSHA is sent to idle mode.
+         I2C_status = I2C_Protocol(&((*command_response).command[0]), 1, I2C_MT_MODE, ATSHA_SLAVE_ADDRESS, IGNORE_CRC, 0x00, 0x00, current_system_time);
+         PL2_output_flag = PL2_FINISHED;      // The protocol is terminated at this point.
+         current_operation = WAKE_ATSHA;        // When this busy cycle is finished, the status is reset to WAKE ATSHA. 
+                                                // Hence, the next cycle will begin from the top.
+         ATSHA_timer = 0;                       // Given that this is the final state of operation for this cycle, timer is set to zero.
+         break;           
+     
+       default:    // Facing an unknown state
+         current_operation = PL2_RECOVERY_STATUS;   // Jump to the recovery state.
+         break;
+        
+       case (PL2_RECOVERY_STATUS):       // Recovery state (that follows an unknown state).
+         if (I2C_status.current_state == I2C_BUSY)            // Only if the current transaction is not finished, continue with the I2C protocol.
+         {
+           I2C_status = I2C_Protocol(&(*command_response).response[0], 1, I2C_MR_MODE, ATSHA_SLAVE_ADDRESS, IGNORE_CRC, 0x00, 0x00, current_system_time); // Note that we only need to finish the current transaction.
+                                                                                                                                                          // Hence, any input to the I2C function is irrelevant.
+         }
+         else
+         {
+           transception_counter = 0;
+           current_operation = RESET_ATSHA_BUFFER;
+         }
+         break;
+       
+       case (RESET_ATSHA_BUFFER):
+         I2C_status = I2C_Protocol(&reset_command, 1, I2C_MT_MODE, ATSHA_SLAVE_ADDRESS, IGNORE_CRC, 0x00, 0x00, current_system_time);
+         Write_Buffer_Assign_Status(I2C_status.output_flag, (*command_response).command[1], RESET_ATSHA_BUFFER, SEND_COMMAND);
+         break;
+                  
+       case (PL2_TIMEOUT): // Actions to take if ATSHA WD failsafe is passed.
+         ATSHA_timer = 0;
+         current_operation = WAKE_ATSHA;
+         PL2_output_flag = PL2_FAILURE;
+         break;
+     }
+         
+     
+     //// Finalization
+     return(PL2_output_flag);
+}
+
+void Write_Buffer_Assign_Status(bool I2C_status, unsigned char command_length, unsigned char operation_current, unsigned char operation_next)
+{
+  if (ATSHA_timer > ATSHA_WD_DURATION)
+  {
+    current_operation = PL2_TIMEOUT;    
+  }
+  else if (I2C_status != I2C_PROTOCOL_FINISHED)         
+  {
+    current_operation = operation_current;
+  }
+  else if (I2C_status ==  I2C_PROTOCOL_FINISHED && transception_counter < command_length)      // If current transmission is finished but command transmission is not.
+  {
+    transception_counter++;     // Increment transmission index.
+    current_operation = operation_current;
+  }
+  else  // I2C protocol is no longer busy and all data has been transmitted.
+  {
+    transception_counter = 0;   // Reset the counter, given that the current transaction is finished.
+    current_operation = operation_next;         
+  }
+}
+
+void Read_Buffer_Assign_Status(bool I2C_status, command_response_struct *command_response, unsigned char operation_current, unsigned char operation_next, unsigned char recursion_operation)
+{
+  if (ATSHA_timer > ATSHA_WD_DURATION)
+  {
+    current_operation = PL2_TIMEOUT;    
+  }
+  else if (I2C_status !=  I2C_PROTOCOL_FINISHED)         
+  {
+    current_operation = operation_current;
+  }
+  else if (I2C_status ==  I2C_PROTOCOL_FINISHED && transception_counter < (*command_response).response_length)     // If current reception is finished but response reception is not.
+  {
+    transception_counter++;     // Increment recpetion index.
+    current_operation = operation_current;
+  }
+  else
+  {
+    transception_counter = 0;   // Reset the counter, given that the current transaction is finished.
+    received_CRC_bytes[0] = (*command_response).response[(*command_response).response_length-2];        // Extract CRC byte one from the response vector
+    received_CRC_bytes[1] = (*command_response).response[(*command_response).response_length-1];        // Extract CRC byte two from the response vector
+    if (((*command_response).response[1] == (*command_response).successful_response || (*command_response).response[1] == ATSHA_AWAKE_RESPONSE) && CRC_VALID == Check_CRC(2, &((*command_response).response[0]), (*command_response).response_length))     // If status/error byte is response to a successful wake token or desired command
+                                                                                                                                                                                                                                                              // If CRC is valid, go to the next operation, else reset this cycle.
+    {
+      current_operation = operation_next;
+    }
+    else
+    {
+      current_operation = recursion_operation;
+    }
+  }
+}
+

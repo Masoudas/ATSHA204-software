@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>sd_init/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>81</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>980</ColumnWidth1><ColumnWidth2>261</ColumnWidth2><ColumnWidth3>65</ColumnWidth3></Build>
+    </Static>
+    <Windows>
+      
+    <Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-4188-10016</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>sd_init</ExpandedNode></NodeDict></Session>
+          </Tab>
+          <Tab>
+            <Identity>TabID-25350-11257</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>1</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>D:\Rasouli\1-Projects\1-FSB\3-FSB200y(SD+flash)\Firmware\Digital Volume\SD and FLASH\FSB200_IAR930729 - 2\main.cpp</Filename><XPos>0</XPos><YPos>820</YPos><SelStart>21681</SelStart><SelEnd>21681</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\Rasouli\1-Projects\1-FSB\3-FSB200y(SD+flash)\Firmware\Digital Volume\SD and FLASH\FSB200_IAR930729 - 2\general.h</Filename><XPos>0</XPos><YPos>87</YPos><SelStart>2163</SelStart><SelEnd>2163</SelEnd></Tab><ActiveTab>1</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01b3c3a0><key>iaridepm.enu1</key></Toolbar-01b3c3a0></Sizes></Row0></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>641</Bottom><Right>266</Right><x>-2</x><y>-2</y><xscreen>-2166809</xscreen><yscreen>-1005020</yscreen><sizeHorzCX>-2147483648</sizeHorzCX><sizeHorzCY>-2147483648</sizeHorzCY><sizeVertCX>-2147483648</sizeVertCX><sizeVertCY>-2147483648</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes/></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

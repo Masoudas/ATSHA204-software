@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1278525488</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\Debug\Obj\Flash_Data_Read.r90</file>
+      <file>$PROJ_DIR$\ATSHA_Commands_Module.c</file>
+      <file>$PROJ_DIR$\Flash_Data_Read.h</file>
+      <file>$PROJ_DIR$\ATSHA_Authentication_PL1.c</file>
+      <file>$PROJ_DIR$\ATSHA_Authentication_PL1.h</file>
+      <file>$PROJ_DIR$\ATSHA_Commands_Module.h</file>
+      <file>$PROJ_DIR$\ATSHA_EmulatingSoftware_Module.c</file>
+      <file>$PROJ_DIR$\ATSHA_EmulatingSoftware_Module.h</file>
+      <file>$PROJ_DIR$\ATSHA_PL2.c</file>
+      <file>$PROJ_DIR$\ATSHA_PL2.h</file>
+      <file>$PROJ_DIR$\I2C_ACK_NACK_Generation.c</file>
+      <file>$PROJ_DIR$\I2C_ACK_NACK_Generation.h</file>
+      <file>$PROJ_DIR$\I2C_Protocol.c</file>
+      <file>$PROJ_DIR$\I2C_Protocol.h</file>
+      <file>$PROJ_DIR$\ATSHA_Programmer_PL1.h</file>
+      <file>$PROJ_DIR$\ATSHA_Command_Assignment.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\ATSHA_PL2.pbi</file>
+      <file>$PROJ_DIR$\ATSHA_Programmer_PL2.h</file>
+      <file>$PROJ_DIR$\Learn_Mode.c</file>
+      <file>$TOOLKIT_DIR$\inc\iom8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ATSHA_Authentication_PL1.pbi</file>
+      <file>$PROJ_DIR$\Main.cpp</file>
+      <file>$PROJ_DIR$\Flash_Page_Read.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\ATSHA_PL2.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\ATSHA_Command_Assignment.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Flash_Page_Read.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\RD_SPI.r90</file>
+      <file>$TOOLKIT_DIR$\inc\inavr.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Flash_Page_Read.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\SD_fun.r90</file>
+      <file>$PROJ_DIR$\Flash_Data_Read.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Flash_Data_Read.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\I2C_Protocol.r90</file>
+      <file>$PROJ_DIR$\ATSHA_Programmer_PL1.c</file>
+      <file>$PROJ_DIR$\Debug\Exe\fsb200a-940816.hex</file>
+      <file>$PROJ_DIR$\SD_fun.c</file>
+      <file>$TOOLKIT_DIR$\src\template\cfg1soim.xcl</file>
+      <file>$PROJ_DIR$\FAT_fun.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\RD_SPI.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\ATSHA_Programmer_PL1.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\spifunc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\ATSHA_Authentication_PL1.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\FAT_fun.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Learn_Mode.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\spifunc.r90</file>
+      <file>$PROJ_DIR$\SD_fun.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Learn_Mode.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\I2C_ACK_NACK_Generation.r90</file>
+      <file>$PROJ_DIR$\Flash_Page_Read.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\FAT_fun.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\I2C_Protocol.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\I2C_ACK_NACK_Generation.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\SD_fun.pbi</file>
+      <file>$PROJ_DIR$\RD_SPI.c</file>
+      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
+      <file>$PROJ_DIR$\FAT_fun.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ATSHA_Programmer_PL1.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\yvals.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ATSHA_Commands_Module.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\ATSHA_Commands_Module.r90</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\stdio.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-1s-ec_mul-n.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\ycheck.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ATSHA_EmulatingSoftware_Module.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\ATSHA_EmulatingSoftware_Module.pbi</file>
+      <file>$PROJ_DIR$\spifunc.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ATSHA_Programmer_PL2.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\ATSHA_Programmer_PL2.pbi</file>
+      <file>$PROJ_DIR$\General.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ATSHA_Command_Assignment.r90</file>
+      <file>$TOOLKIT_DIR$\inc\ioavr.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Main.r90</file>
+      <file>$PROJ_DIR$\spifunc.c</file>
+      <file>$PROJ_DIR$\ATSHA_Programmer_PL2.c</file>
+      <file>$TOOLKIT_DIR$\src\template\cfgm8.xcl</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-1s-ec_mul-n.r90</file>
+      <file>$PROJ_DIR$\ATSHA_Command_Assignment.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\sd_init.pbd</file>
+      <file>$PROJ_DIR$\RD_SPI.h</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\ATSHA_Commands_Module.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 9 13 11 62 70 64 60 59 61 63 69</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 4 9 13</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ATSHA_Authentication_PL1.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 9 13 5 67 70 64 60 59 61 63 69</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 4 9 13 5 67 70 64 60 68 59 61 63 69</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ATSHA_EmulatingSoftware_Module.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 71</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 9 13 62 70 64 60 59 61 63 69</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 4 9 13 62 70 64 60 68 59 61 63 69</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ATSHA_PL2.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78 19 55 4 9 13 11</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 78 19 55 4 9 13 11</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\I2C_ACK_NACK_Generation.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13 11 27 57 78 19 55</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 13 11 27 57 78 19 55</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\I2C_Protocol.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13 11 27 57 78 19 55</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 13 11 27 57 78 19 55</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ATSHA_Command_Assignment.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 77</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 4 9 13 84 11</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Learn_Mode.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 57 78 19 55 2 49 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Main.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 79</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 57 78 19 55 76 13 11</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 27 57 78 19 55 76 13 11</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Flash_Page_Read.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 49 2 27 57 19 55 76 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Flash_Data_Read.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 0</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 27 57 78 19 55 2 49 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ATSHA_Programmer_PL1.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 14 9 13 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\fsb200a-940816.hex</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 82 37 42 77 23 48 33 83</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\SD_fun.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 29</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 46 27 57 78 19 55 76 73</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\FAT_fun.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 50</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78 19 55 27 57 46 56 76</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 78 19 55 27 57 46 56 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\RD_SPI.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 86 27 57 78 19 55</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\spifunc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 73 27 57 78 19 55</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ATSHA_Programmer_PL2.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 75</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 74</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 78 19 55 14 17 13 11</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\sd_init.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 20 65 72 16 52 51</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

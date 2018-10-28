@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>sd_init/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>1519</Column0><Column1>7</Column1><Column2>27</Column2><Column3>19598496</Column3></ColumnWidths>
+      <PreferedWindows><Position>1</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Build</Factory></Window><Window><Factory>Find-in-Files</Factory></Window></Windows></PreferedWindows></Workspace>
+      <Build>
+        
+        
+        
+        
+      <PreferedWindows><Position>1</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Workspace</Factory></Window><Window><Factory>Find-in-Files</Factory></Window></Windows></PreferedWindows><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>980</ColumnWidth1><ColumnWidth2>261</ColumnWidth2><ColumnWidth3>65</ColumnWidth3></Build>
+    <Find-in-Files><PreferedWindows><Position>1</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Workspace</Factory></Window><Window><Factory>Build</Factory></Window></Windows></PreferedWindows><ColumnWidth0>107</ColumnWidth0><ColumnWidth1>0</ColumnWidth1><ColumnWidth2>172</ColumnWidth2></Find-in-Files><TerminalIO/><SourceBrowser><PreferedWindows><Position>1</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></SourceBrowser><Debug-Log><PreferedWindows><Position>1</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></Debug-Log><Tool-Output><PreferedWindows><Position>1</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></Tool-Output></Static>
+    <Windows>
+      
+    <Wnd0><Tabs><Tab><Identity>TabID-2567-14676</Identity><TabName>Build</TabName><Factory>Build</Factory><Session/></Tab><Tab><Identity>TabID-23541-14692</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab><Tab><Identity>TabID-6519-14807</Identity><TabName>Workspace</TabName><Factory>Workspace</Factory><Session><NodeDict><ExpandedNode>sd_init</ExpandedNode></NodeDict></Session></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd0></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960413 - Copy\Main.cpp</Filename><XPos>0</XPos><YPos>20</YPos><SelStart>1159</SelStart><SelEnd>1159</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960413 - Copy\ATSHA_PL2.c</Filename><XPos>0</XPos><YPos>196</YPos><SelStart>11779</SelStart><SelEnd>11779</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960413 - Copy\ATSHA_PL2.h</Filename><XPos>0</XPos><YPos>44</YPos><SelStart>3937</SelStart><SelEnd>3937</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960413 - Copy\ATSHA_Programmer_PL1.h</Filename><XPos>0</XPos><YPos>88</YPos><SelStart>4826</SelStart><SelEnd>4826</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960413 - Copy\ATSHA_Programmer_PL1.c</Filename><XPos>0</XPos><YPos>31</YPos><SelStart>5259</SelStart><SelEnd>5259</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960413 - Copy\I2C_Protocol.c</Filename><XPos>0</XPos><YPos>197</YPos><SelStart>8359</SelStart><SelEnd>8359</SelEnd></Tab><ActiveTab>5</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960413 - Copy\I2C_Protocol.h</Filename><XPos>0</XPos><YPos>172</YPos><SelStart>11409</SelStart><SelEnd>11409</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960413 - Copy\Main.h</Filename><XPos>0</XPos><YPos>36</YPos><SelStart>1981</SelStart><SelEnd>1981</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-02540598><key>iaridepm.enu1</key></Toolbar-02540598></Sizes></Row0></Top><Left><Row0><Sizes/></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>231</Bottom><Right>1602</Right><x>-2</x><y>-2</y><xscreen>1604</xscreen><yscreen>233</yscreen><sizeHorzCX>1002500</sizeHorzCX><sizeHorzCY>284841</sizeHorzCY><sizeVertCX>213750</sizeVertCX><sizeVertCY>947433</sizeVertCY></Rect></Wnd0></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

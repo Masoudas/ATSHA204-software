@@ -1,0 +1,13 @@
+*******************************************************************************************************************
+960314:
+	- Read & Write assign status functions have been combined into one function.
+
+*******************************************************************************************************************
+960521:
+	- I2C now sends the entire command in one try. An extra state is added to PL2_Assign_Operation()
+	  so that in case of NACK of data from ATSHA (or the system because of a mistake), PL2 transits to RESET_ATSHA_BUFFER.
+*******************************************************************************************************************
+960530:
+	- Level two has been modified. Now in case of failure, level two will not proceed untill command is renewed in level one.
+	- Two ensure that level two will function when first command is executed and second is not, level two output flag is defined 
+	  as static.

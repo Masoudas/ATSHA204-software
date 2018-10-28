@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>sd_init/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>285</Column0><Column1>7</Column1><Column2>27</Column2><Column3>19598496</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>980</ColumnWidth1><ColumnWidth2>261</ColumnWidth2><ColumnWidth3>65</ColumnWidth3></Build>
+    <Find-in-Files><ColumnWidth0>107</ColumnWidth0><ColumnWidth1>23</ColumnWidth1><ColumnWidth2>352</ColumnWidth2></Find-in-Files><TerminalIO/></Static>
+    <Windows>
+      
+    <Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-10885-15688</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>sd_init</ExpandedNode></NodeDict></Session>
+          </Tab>
+          <Tab>
+            <Identity>TabID-32361-18970</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-23353-32326</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>2</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960311\ATSHA_Command_Assignment.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960311\ATSHA_Programmer_PL1.c</Filename><XPos>0</XPos><YPos>126</YPos><SelStart>5462</SelStart><SelEnd>5462</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960311\ATSHA_Programmer_PL1.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960311\I2C_ACK_NACK_Generation.c</Filename><XPos>0</XPos><YPos>54</YPos><SelStart>916</SelStart><SelEnd>916</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960311\I2C_ACK_NACK_Generation.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>237</SelStart><SelEnd>237</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960311\I2C_Protocol.c</Filename><XPos>0</XPos><YPos>168</YPos><SelStart>632</SelStart><SelEnd>649</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960311\I2C_Protocol.h</Filename><XPos>0</XPos><YPos>147</YPos><SelStart>10253</SelStart><SelEnd>10266</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960311\ATSHA_Programmer_PL2.h</Filename><XPos>0</XPos><YPos>72</YPos><SelStart>5560</SelStart><SelEnd>5560</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960311\ATSHA_Programmer_PL2.c</Filename><XPos>0</XPos><YPos>117</YPos><SelStart>7499</SelStart><SelEnd>7499</SelEnd></Tab><ActiveTab>8</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Majidkhan\Desktop\Masoud\ATSHA Security Project\SW\Programmer\ATSHA_Programmer-SW_960311\ATSHA_Command_Assignment.c</Filename><XPos>0</XPos><YPos>108</YPos><SelStart>5369</SelStart><SelEnd>5369</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00e20598><key>iaridepm.enu1</key></Toolbar-00e20598></Sizes></Row0></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>773</Bottom><Right>233</Right><x>-2</x><y>-2</y><xscreen>-2345051</xscreen><yscreen>-1389421</yscreen><sizeHorzCX>-1465656874</sizeHorzCX><sizeHorzCY>-1698558679</sizeHorzCY><sizeVertCX>146875</sizeVertCX><sizeVertCY>947433</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes/></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
